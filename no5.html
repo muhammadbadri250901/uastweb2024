@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Email</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="email-form">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Masukkan email Anda">
+        <button type="submit">Submit</button>
+        <p class="error-message" id="error-message"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

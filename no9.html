@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .main-content .text {
+            flex: 0 0 60%;
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .main-content .image {
+            flex: 0 0 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eaeaea;
+            border: 1px solid #ccc;
+        }
+
+        .main-content .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .main-content .text, 
+            .main-content .image {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="text">
+            <h1>Konten Utama</h1>
+            <p>
+                Ini adalah bagian teks dari konten utama. Anda dapat menambahkan informasi, artikel, atau apa pun di sini. Bagian ini akan selalu berada di sebelah kiri gambar.
+            </p>
+        </div>
+        <div class="image">
+            <img src="https://via.placeholder.com/400x300" alt="Placeholder Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hak Cipta Dilindungi</p>
+    </footer>
+</body>
+</html>
